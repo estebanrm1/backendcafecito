@@ -4,6 +4,8 @@ import morgan from 'morgan';
 import path from "path";
 import 'dotenv/config';
 import './src/database/dbConnection'
+import productosRouter from './src/routes/productos.routes'
+
 
 //usar puerto
 const app = express();
@@ -23,3 +25,4 @@ app.use(express.static(path.join(__dirname, '/public'))) //Esto nos permite pode
 
 
 //rutas
+app.use('/apicafe', productosRouter)

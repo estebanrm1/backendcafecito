@@ -14,7 +14,7 @@ const productoSchema = new Schema({
         max: 10000,
         required: true
     },
-    image:{
+    url:{
         type: String,
         required: true
     },
